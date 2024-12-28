@@ -5,7 +5,7 @@ commonPipeline (
     projectId: "meghdo-4567",
     clusterName: "meghdo-cluster",
     clusterRegion: "europe-west1",
-    appName: "drizzlenodejs",
+    appName: "drizzleangular",
     dockerRegistry: "europe-west1-docker.pkg.dev",
     namespace: "default",
     scanOWASP: "false",  // OWASP Scanning takes about 7-10 min of scanning time, turn on when scanning is needed
