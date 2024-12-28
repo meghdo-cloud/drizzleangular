@@ -44,9 +44,9 @@ spec:
       args: ["9999999"]
       resources:
         requests:
-          ephemeral-storage: "2Gi"
-        limits:
           ephemeral-storage: "3Gi"
+        limits:
+          ephemeral-storage: "4Gi"
       securityContext:
         runAsUser: 0
         runAsGroup: 0
