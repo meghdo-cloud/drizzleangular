@@ -8,6 +8,7 @@ RUN npm run build --prod
 
 # Stage 2: Serve the application using Nginx
 FROM nginx:alpine
-COPY --from=build /app/dist/drizzleangular /usr/share/nginx/html/drizzleangular
+# Copy files from the correct directory
+COPY --from=build /app/dist/drizzleangular/browse /usr/share/nginx/html/drizzleangular
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
