@@ -17,4 +17,4 @@ spec:
         - destination:
             host: {{ $.Release.Name }}.{{ $.Release.Namespace }}.svc.cluster.local
             port:
-              number: 8080
+              number: {{ .Values.service.port }}
